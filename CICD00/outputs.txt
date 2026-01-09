@@ -1,0 +1,3 @@
+Jenkins initial admin password: d2fac91066724bcc88a856fcdc584a04
+Jenkins URL: http://10.132.0.4:8080
+Jenkins URL 2: http://35.210.84.141:8080
