@@ -15,4 +15,8 @@ greeter
 **/bin/webapp
 go.sum
 terraform-provider-mynewprovider
+**terraform-provider-simple1
+
+
+
 
