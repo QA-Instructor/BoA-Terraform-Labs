@@ -17,6 +17,10 @@ go.sum
 terraform-provider-mynewprovider
 **terraform-provider-simple1
 
+VAL02/EULA.txt
+VAL02/sentinel
+VAL02/sentinel_0.40.0_linux_amd64.zip
+
 
 
 
