@@ -8,3 +8,4 @@ terraform.tfstate.backup
 **/.terraform.lock.info/**
 ansible_key
 ansible_key.pub
+vault.yml
