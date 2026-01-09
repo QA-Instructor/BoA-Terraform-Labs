@@ -1,0 +1,76 @@
+definitions:
+  main.Task:
+    properties:
+      completed:
+        type: boolean
+      description:
+        example: ExampleTask
+        type: string
+      id:
+        example: ae3f1c
+        type: string
+      title:
+        example: Example
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /tasks:
+    delete:
+      parameters:
+      - description: task json
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/main.Task'
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: body
+      summary: Manage_Tasks
+    get:
+      parameters:
+      - description: task json
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/main.Task'
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: body
+      summary: Manage_Tasks
+    post:
+      parameters:
+      - description: task json
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/main.Task'
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: body
+      summary: Manage_Tasks
+    put:
+      parameters:
+      - description: task json
+        in: body
+        name: task
+        required: true
+        schema:
+          $ref: '#/definitions/main.Task'
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: body
+      summary: Manage_Tasks
+swagger: "2.0"

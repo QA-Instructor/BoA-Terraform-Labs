@@ -1,0 +1,216 @@
+[
+  {
+    "iterationIndex": 0,
+    "results": [
+      {
+        "test": {
+          "filename": "Manage_Tasks (POST).bru"
+        },
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:8080/tasks",
+          "headers": {
+            "content-type": "application/json"
+          },
+          "data": "{\n  \"id\": \"ae3f1c\",\n  \"title\": \"Task1\",\n  \"description\": \"A sample task\",\n  \"completed\": false\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "access-control-allow-headers": "Content-Type",
+            "access-control-allow-origin": "*",
+            "content-type": "application/json",
+            "date": "Thu, 08 Jan 2026 14:19:35 GMT",
+            "content-length": "80"
+          },
+          "data": {
+            "completed": false,
+            "id": "ae3f1c",
+            "title": "Task1",
+            "description": "A sample task"
+          },
+          "url": "http://localhost/tasks",
+          "responseTime": 53
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "should have created the task",
+            "status": "pass",
+            "uid": "rgVXxFbX-yWaldU1ImjDT"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 0.735292508,
+        "name": "Manage_Tasks (POST)",
+        "path": "Manage_Tasks (POST)",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "Manage_Tasks.bru"
+        },
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:8080/tasks",
+          "headers": {}
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "access-control-allow-headers": "Content-Type",
+            "access-control-allow-origin": "*",
+            "content-type": "application/json",
+            "date": "Thu, 08 Jan 2026 14:19:35 GMT",
+            "content-length": "91"
+          },
+          "data": {
+            "ae3f1c": {
+              "completed": false,
+              "id": "ae3f1c",
+              "title": "Task1",
+              "description": "A sample task"
+            }
+          },
+          "url": "http://localhost/tasks",
+          "responseTime": 4
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "should return items",
+            "status": "pass",
+            "uid": "B6CSXzcKtm-v55rtdCnjD"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 0.17773129,
+        "name": "Manage_Tasks",
+        "path": "Manage_Tasks",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "Manage_Tasks (PUT).bru"
+        },
+        "request": {
+          "method": "PUT",
+          "url": "http://localhost:8080/tasks",
+          "headers": {
+            "content-type": "application/json"
+          },
+          "data": "{\n  \"id\": \"ae3f1c\",\n  \"title\": \"Task1\",\n  \"description\": \"A sample task\",\n  \"completed\": true\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "access-control-allow-headers": "Content-Type",
+            "access-control-allow-origin": "*",
+            "content-type": "application/json",
+            "date": "Thu, 08 Jan 2026 14:19:35 GMT",
+            "content-length": "79"
+          },
+          "data": {
+            "completed": true,
+            "id": "ae3f1c",
+            "title": "Task1",
+            "description": "A sample task"
+          },
+          "url": "http://localhost/tasks",
+          "responseTime": 2
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "should have updated the task",
+            "status": "pass",
+            "uid": "jhxlqpdJUMrUidFeIBXQq"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 0.200217149,
+        "name": "Manage_Tasks (PUT)",
+        "path": "Manage_Tasks (PUT)",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "Manage_Tasks (DELETE).bru"
+        },
+        "request": {
+          "method": "DELETE",
+          "url": "http://localhost:8080/tasks",
+          "headers": {
+            "content-type": "application/json"
+          },
+          "data": "{\n  \"id\": \"ae3f1c\",\n  \"title\": \"Task1\",\n  \"description\": \"A sample task\",\n  \"completed\": true\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "access-control-allow-headers": "Content-Type",
+            "access-control-allow-origin": "*",
+            "content-type": "application/json",
+            "date": "Thu, 08 Jan 2026 14:19:35 GMT",
+            "content-length": "3"
+          },
+          "data": {},
+          "url": "http://localhost/tasks",
+          "responseTime": 2
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "should have deleted the task",
+            "status": "pass",
+            "uid": "gfPydNB3lz3CrUvGqyFYy"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 0.334926797,
+        "name": "Manage_Tasks (DELETE)",
+        "path": "Manage_Tasks (DELETE)",
+        "iterationIndex": 0
+      }
+    ],
+    "summary": {
+      "totalRequests": 4,
+      "passedRequests": 4,
+      "failedRequests": 0,
+      "errorRequests": 0,
+      "skippedRequests": 0,
+      "totalAssertions": 0,
+      "passedAssertions": 0,
+      "failedAssertions": 0,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "totalPreRequestTests": 0,
+      "passedPreRequestTests": 0,
+      "failedPreRequestTests": 0,
+      "totalPostResponseTests": 0,
+      "passedPostResponseTests": 0,
+      "failedPostResponseTests": 0
+    }
+  }
+]
