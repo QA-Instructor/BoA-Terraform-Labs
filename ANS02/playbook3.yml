@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+  name: Basic Play
+  connection: local
+  become: true
+  tasks:
+  - name: Install nginx
+    apt:
+      name: nginx
+      state: present
+      update_cache: true
+  - name: Copy nginx.conf
+    copy:
+      src: nginx.conf
+      dest: /etc/nginx/nginx.conf
+    register: nginx_config
+
+  - name: Restart nginx if needed
+    shell:
+      cmd: "killall nginx || sleep 1; nginx -g 'daemon off;' &"
+    when: nginx_config.changed == true
