@@ -11,3 +11,8 @@ ansible_key.pub
 vault.yml
 data.json
 secrets.json
+greeter
+**/bin/webapp
+go.sum
+terraform-provider-mynewprovider
+
