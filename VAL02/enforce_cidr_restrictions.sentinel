@@ -1,0 +1,19 @@
+import "tfplan/v2" as tfplan
+import "strings"
+import "types" 
+
+allowed_source_ranges = [
+ # "10.0.1.0/24",      # own subnet
+  "0.0.0.0/0",      # own subnet
+  "130.211.0.0/22",   # Specific external network
+  "35.191.0.0/16",     # Google Cloud Health Check ranges (important for ingress!)
+]
+
+all_firewall_rules_valid = rule {
+  allowed_source_ranges contains "10.0.1.0/24"
+}
+
+# Enforce the rule
+main = rule {
+  all_firewall_rules_valid
+}
