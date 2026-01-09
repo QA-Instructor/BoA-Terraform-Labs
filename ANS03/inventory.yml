@@ -1,0 +1,10 @@
+all:
+  children:
+    test:
+      hosts:
+        35.210.184.231: # replace 
+        35.210.84.141: # replace
+        35.210.183.144: # replace
+      vars:
+        ansible_user: ansible
+        ansible_ssh_private_key_file: '~/Labs/ANS03/ansible_key'
