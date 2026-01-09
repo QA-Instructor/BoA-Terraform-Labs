@@ -10,3 +10,4 @@ ansible_key
 ansible_key.pub
 vault.yml
 data.json
+secrets.json
